@@ -147,8 +147,4 @@ def refresh_data():
 
 
 if __name__ == "__main__":
-    pd.set_option('display.max_rows', None)
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', None)
     refresh_data()

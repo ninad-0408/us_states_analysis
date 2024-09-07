@@ -37,14 +37,13 @@ def render_app(with_scheduler):
     with_scheduler : bool
         Whether to refresh the data every INTERVAL_HOUR hours
     """
-    
     if with_scheduler:
         refresh_scheduler = get_refresh_scheduler(INTERVAL_HOUR)
         refresh_scheduler.start()
 
-    master_df = pd.read_csv('./master_index_data.csv')
-
     st.title('Health and Prosperity Index')
+
+    master_df = pd.read_csv('./master_index_data.csv')
 
     yearwise_top_states(st, master_df)
     state_year_line_chart(st, master_df)

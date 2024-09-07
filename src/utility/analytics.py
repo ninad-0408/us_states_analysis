@@ -45,4 +45,4 @@ def state_year_line_chart(st, master_df):
     if not select_all_years:
         state_year_df = state_year_df[state_year_df['ID Year'].isin(years)]
 
-    st.line_chart(state_year_df, x='ID Year', y='health_and_prosperity_index')
+    st.line_chart(state_year_df, x='ID Year', y='health_and_prosperity_index', color="State")

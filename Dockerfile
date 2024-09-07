@@ -1,10 +1,11 @@
-FROM python:3.7
+FROM python:3.10
 
 COPY requirements.txt /
-RUN python3 install -r /requirements.txt
+RUN pip install -r /requirements.txt
 
 EXPOSE 8501
 COPY . /app
 WORKDIR /app
 
+RUN python ./cron/update_data.py
 CMD ["streamlit", "run", "main.py"]

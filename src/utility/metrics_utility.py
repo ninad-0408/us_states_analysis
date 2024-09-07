@@ -152,20 +152,20 @@ LIMITED_ACCESS_TO_HEALTHY_FOODS = {
     }
 }
 
-CONSIDERED_METRICS = [{'config': AVERAGE_WAGE, 'weight': 1},
-                      {'config': POVERTY_POPULATION, 'weight': 1},
-                      {'config': EMPLOYED_POPULATION, 'weight': 1},
-                      {'config': CHILD_MORTALITY, 'weight': 1},
+CONSIDERED_METRICS = [{'config': AVERAGE_WAGE, 'weight': 3},
+                      {'config': POVERTY_POPULATION, 'weight': 4},
+                      {'config': EMPLOYED_POPULATION, 'weight': 4},
+                      {'config': CHILD_MORTALITY, 'weight': 2},
                       {'config': PATIENT_TO_PRIMARY_CARE_RATIO, 'weight': 1},
                       {'config': OTHER_PRIMARY_CARE_PROVIDERS, 'weight': 1},
                       {'config': PATIENT_TO_DENTIST_RATIO, 'weight': 1},
                       {'config': PATIENT_TO_MENTAL_HEALTH_PROVIDER_RATIO, 'weight': 1},
-                      {'config': POOR_OR_FAIR_HEALTH, 'weight': 1},
-                      {'config': PREMATURE_DEATHS, 'weight': 1},
-                      {'config': ADULT_OBESITY, 'weight': 1},
-                      {'config': LIMITED_ACCESS_TO_HEALTHY_FOODS, 'weight': 1},
+                      {'config': POOR_OR_FAIR_HEALTH, 'weight': 2},
+                      {'config': PREMATURE_DEATHS, 'weight': 3},
+                      {'config': ADULT_OBESITY, 'weight': 4},
+                      {'config': LIMITED_ACCESS_TO_HEALTHY_FOODS, 'weight': 2},
                       {'config': PHYSICAL_INACTIVITY, 'weight': 1},
-                      {'config': DIABETES_PREVALENCE, 'weight': 1}]
+                      {'config': DIABETES_PREVALENCE, 'weight': 3}]
 
 POPULATION_METRICS = [POVERTY_POPULATION, EMPLOYED_POPULATION]
 
