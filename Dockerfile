@@ -7,5 +7,4 @@ EXPOSE 8501
 COPY . /app
 WORKDIR /app
 
-RUN ["python", "src/cron/update_data.py"]
 CMD ["streamlit", "run", "main.py"]
