@@ -164,7 +164,7 @@ CONSIDERED_METRICS = [{'config': AVERAGE_WAGE, 'weight': 3},
                       {'config': PREMATURE_DEATHS, 'weight': 3},
                       {'config': ADULT_OBESITY, 'weight': 4},
                       {'config': LIMITED_ACCESS_TO_HEALTHY_FOODS, 'weight': 2},
-                      {'config': PHYSICAL_INACTIVITY, 'weight': 1},
+                      {'config': PHYSICAL_INACTIVITY, 'weight': 2},
                       {'config': DIABETES_PREVALENCE, 'weight': 3}]
 
 POPULATION_METRICS = [POVERTY_POPULATION, EMPLOYED_POPULATION]
